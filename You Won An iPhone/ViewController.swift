@@ -22,7 +22,6 @@ class ViewController: UIViewController {
             UIImage(named: "AppIcon"),
             UIImage(named: "nihad"),
             UIImage(named: "deckcard"),
-            UIImage(named: "log")
         ].compactMap { $0 }
         imageView1.image = imageArray.randomElement() ?? UIImage(named:"AppIcon")
     }
