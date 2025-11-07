@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="You_Won_An_iPhone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="53f-4w-nqI">
+                                <rect key="frame" x="0.0" y="96" width="414" height="732"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ka-Tu-z2l" userLabel="top view">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="243.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You won an iPhone!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ds2-6J-v6O">
+                                                <rect key="frame" x="108" y="111" width="198.5" height="21"/>
+                                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="21"/>
+                                                <color key="textColor" red="0.2627450980392157" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ds2-6J-v6O" firstAttribute="centerY" secondItem="3ka-Tu-z2l" secondAttribute="centerY" id="0Ji-nN-5oF"/>
+                                            <constraint firstItem="ds2-6J-v6O" firstAttribute="centerX" secondItem="3ka-Tu-z2l" secondAttribute="centerX" id="TzK-h4-r0a"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lxl-Jd-769" userLabel="middle view">
+                                        <rect key="frame" x="0.0" y="244.5" width="414" height="243"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone17promax" translatesAutoresizingMaskIntoConstraints="NO" id="6VM-v5-1CF">
+                                                <rect key="frame" x="40.5" y="0.0" width="333" height="243"/>
+                                                <color key="backgroundColor" red="0.99215686270000003" green="0.74631453107482515" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="6VM-v5-1CF" firstAttribute="centerY" secondItem="lxl-Jd-769" secondAttribute="centerY" id="5PO-E4-aIK"/>
+                                            <constraint firstAttribute="bottom" secondItem="6VM-v5-1CF" secondAttribute="bottom" id="WKU-A4-yO4"/>
+                                            <constraint firstItem="6VM-v5-1CF" firstAttribute="top" secondItem="lxl-Jd-769" secondAttribute="top" id="j0s-HI-wKc"/>
+                                            <constraint firstItem="6VM-v5-1CF" firstAttribute="centerX" secondItem="lxl-Jd-769" secondAttribute="centerX" id="mtu-zi-aou"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gq0-Gl-04p" userLabel="bottom view">
+                                        <rect key="frame" x="0.0" y="488.5" width="414" height="243.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ib9-fS-e7Q">
+                                                <rect key="frame" x="144" y="103" width="126.5" height="38"/>
+                                                <color key="tintColor" red="0.69377860189999996" green="0.45339880710000002" blue="0.83344388449999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Get Reward" cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="changeImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="URO-13-xAE"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ib9-fS-e7Q" firstAttribute="centerX" secondItem="Gq0-Gl-04p" secondAttribute="centerX" id="jJd-Qe-oWY"/>
+                                            <constraint firstItem="ib9-fS-e7Q" firstAttribute="centerY" secondItem="Gq0-Gl-04p" secondAttribute="centerY" id="qEy-OK-qLX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.81176470588235294" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="53f-4w-nqI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0w1-cb-GZf"/>
+                            <constraint firstItem="53f-4w-nqI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GOH-Mf-3RY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="53f-4w-nqI" secondAttribute="bottom" id="YJJ-bE-H8o"/>
+                            <constraint firstItem="53f-4w-nqI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gBz-Dy-pO6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView1" destination="6VM-v5-1CF" id="9gf-o5-8RX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.43478260869566" y="3.3482142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iphone17promax" width="333" height="333"/>
+    </resources>
+</document>
